@@ -4,13 +4,16 @@
     justify-content: space-around;
 }
 
-.flex-container > div {
+.child {
     /*flex-grow: 1;*/
     flex: 1 1 15%;
     /* explanation below */
     margin: 10px;
     height: 50px;
     /* background-color: blue; */
+}
+.child:first-child{
+    width: 20%;
 }
 
 @media screen and (max-width: 768px) {
