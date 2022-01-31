@@ -1,0 +1,20 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-container > div {
+    /*flex-grow: 1;*/
+    flex: 1 1 15%;
+    /* explanation below */
+    margin: 10px;
+    height: 50px;
+    /* background-color: blue; */
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
